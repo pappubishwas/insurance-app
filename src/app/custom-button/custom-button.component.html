@@ -1,0 +1,7 @@
+<button
+  class="justify-center px-6 md:px-8 py-3 border-2 border-customBtnColor hover:bg-blue-700 font-semibold rounded-lg flex items-center text-lg md:text-xl transition duration-300"
+  [ngClass]="[backgroundColor, textColor, width]"
+>
+  <i *ngIf="icon" class="mr-2" [ngClass]="icon"></i>
+  <span>{{ label }}</span>
+</button>

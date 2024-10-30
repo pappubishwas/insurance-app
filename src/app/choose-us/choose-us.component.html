@@ -1,0 +1,50 @@
+<section
+  class="hero bg-gray-100 mt-8 bg-cover bg-center min-h-screen flex items-center justify-center py-8 md:py-20"
+>
+  <div
+    class="flex flex-col md:flex-row items-center justify-between p-4 w-full h-full"
+  >
+    <!-- Image  -->
+    <div
+      class="w-full md:w-1/2 h-80 sm:h-full md:h-full flex justify-center md:justify-start mb-8 md:mb-0"
+    >
+      <img
+        src="assets/choose.png"
+        alt="pic one"
+        class="w-3/4 sm:w-full h-full object-contain sm:rounded-2xl"
+      />
+    </div>
+
+    <!-- Text  -->
+    <div class="p-4 w-full md:w-1/2 text-center md:text-left mt-4 md:mt-0">
+      <h6 class="text-customBtnColor font-semibold">WHY CHOOSE US</h6>
+      <h1
+        class="text-2xl md:text-4xl text-black font-bold leading-snug md:leading-tight"
+      >
+        Our Company Has Been Working <br class="hidden md:block" />
+        Very Faithfully
+      </h1>
+      <p class="mt-4 text-base md:text-lg text-customGray">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat
+        arcu nibh sed placerat elementum. Urna eu et purus et mi sit rhoncus. Id
+        nisl quis arcu nulla leo.
+      </p>
+
+      <!-- List of Insurances -->
+
+      <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <ul class="contents">
+          <li
+            *ngFor="let option of insuranceOptions"
+            class="px-6 py-3 text-base md:text-xl bg-white border-customGray text-customGray hover:bg-customBtnColor hover:text-white font-semibold rounded-lg flex items-center group"
+          >
+            <i
+              class="fa-solid fa-check-double text-customBtnColor mr-3 group-hover:text-white"
+            ></i>
+            {{ option }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

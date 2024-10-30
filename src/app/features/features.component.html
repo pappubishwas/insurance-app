@@ -1,0 +1,21 @@
+<section id="pages" class="py-12 bg-customWhite">
+  <div class="container mx-auto px-6 text-center">
+    <h6 class="text-xl font-bold text-customBtnColor mb-4">OUR FEATURES</h6>
+    <h1 class="text-5xl font-bold text-customGray mb-8">
+      Better Digital Insurance Begins <br />
+      Right Here
+    </h1>
+
+    <!-- Features List -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div
+        *ngFor="let card of cards"
+        class="service-card p-8 bg-white shadow-lg rounded-lg text-left hover:shadow-2xl transition-shadow duration-300"
+      >
+        <i [ngClass]="card.icon + ' text-customBtnColor text-5xl mb-4'"></i>
+        <h3 class="text-2xl font-bold text-black">{{ card.title }}</h3>
+        <p class="mt-4 text-customGray">{{ card.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

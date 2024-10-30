@@ -1,0 +1,21 @@
+@media (max-width: 898px) {
+    .container {
+      padding: 1rem;
+    }
+    .left {
+      grid-template-columns: 1fr;
+      margin-left: 0;
+      margin-right: 2rem;
+    }
+    .team {
+      min-width: 100%;
+      margin: 0 auto;
+    }
+    .right {
+      margin-top: 2rem;
+      padding-left: 0.5rem;
+    }
+    .andrew{
+        margin-right: 1rem;
+    }
+  }
